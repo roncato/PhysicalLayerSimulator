@@ -1,0 +1,5 @@
+EXPORTS PhysicalLayerModel @1
+		PhysicalLayerModel_initialize @2
+		PhysicalLayerModel_terminate @3
+		PhysicalLayerModel_step @4
+		PhysicalLayerModel_GetCAPIStaticMap @5

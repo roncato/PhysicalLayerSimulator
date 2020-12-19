@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\common\rt_malloc_main.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rtw_modelmap_utils.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rt_logging.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rt_logging_mmi.c" />
+    <ClCompile Include="..\PhysicalLayerModelUSRP.c" />
+    <ClCompile Include="..\PhysicalLayerModelUSRP_capi.c" />
+    <ClCompile Include="..\PhysicalLayerModelUSRP_data.c" />
+    <ClCompile Include="..\PhysicalLayerModelUSRP_Receiver.c" />
+    <ClCompile Include="..\PhysicalLayerModelU_Statistics1.c" />
+    <ClCompile Include="..\PhysicalLayerModelU_Statistics2.c" />
+    <ClCompile Include="..\PhysicalLayerModelU_Transmitter.c" />
+    <ClCompile Include="..\rtGetInf.c" />
+    <ClCompile Include="..\rtGetNaN.c" />
+    <ClCompile Include="..\rt_nonfinite.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\builtin_typeid_types.h" />
+    <ClInclude Include="..\multiword_types.h" />
+    <ClInclude Include="..\PhysicalLayerModelUSRP.h" />
+    <ClInclude Include="..\PhysicalLayerModelUSRP_capi.h" />
+    <ClInclude Include="..\PhysicalLayerModelUSRP_private.h" />
+    <ClInclude Include="..\PhysicalLayerModelUSRP_Receiver.h" />
+    <ClInclude Include="..\PhysicalLayerModelUSRP_types.h" />
+    <ClInclude Include="..\PhysicalLayerModelU_Statistics1.h" />
+    <ClInclude Include="..\PhysicalLayerModelU_Statistics2.h" />
+    <ClInclude Include="..\PhysicalLayerModelU_Transmitter.h" />
+    <ClInclude Include="..\rtGetInf.h" />
+    <ClInclude Include="..\rtGetNaN.h" />
+    <ClInclude Include="..\rtmodel.h" />
+    <ClInclude Include="..\rtwtypes.h" />
+    <ClInclude Include="..\rt_defines.h" />
+    <ClInclude Include="..\rt_nonfinite.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC60E265-2511-46BC-8A8B-67CD8A2C298E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>blankVC100Project64</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RT_MALLOC=;MODEL=PhysicalLayerModelUSRP;NUMST=1;NCSTATES=0;HAVESTDIO=;RT=;USE_RTMODEL=;MAT_FILE=1;INTEGER_CODE=0;MT=0;CLASSIC_INTERFACE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;TID01EQ=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\My Projects\CEPhysicalLayer\PhysicalLayer\PhysicalLayerCode\PhysicalLayerModelUSRP_grt_rtw;C:\Users\Lucas\Documents\My Projects\CEPhysicalLayer\PhysicalLayer\PhysicalLayerCode;C:\Program Files\MATLAB\R2013b\extern\include;C:\Program Files\MATLAB\R2013b\simulink\include;C:\Program Files\MATLAB\R2013b\rtw\c\src;C:\Program Files\MATLAB\R2013b\rtw\c\src\ext_mode\common;C:\Program Files\MATLAB\R2013b\toolbox\dsp\include;C:\Program Files\MATLAB\R2013b\toolbox\dsp\extern\src\export\include\src;C:\Program Files\MATLAB\R2013b\toolbox\dsp\extern\src\export\include;C:\Program Files\MATLAB\R2013b\toolbox\shared\dsp\vision\matlab\include;C:\Program Files\MATLAB\R2013b\toolbox\comm\extern\comm_rt\export\include;C:\Program Files\MATLAB\R2013b\toolbox\comm\extern\comm_rt\export\include\comm_rt;C:\MATLAB\SupportPackages\R2013b\sdru\include;C:\MATLAB\SupportPackages\R2013b\sdru\bin\win64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Version>1.272</Version>
+      <AdditionalLibraryDirectories>C:\MATLAB\SupportPackages\R2013b\sdru\lib\win64;C:\Users\Lucas\Documents\My Projects\CEPhysicalLayer\PhysicalLayer\PhysicalLayerCode\PhysicalLayerModelUSRP_grt_rtw\msvc\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> libmwusrp_uhd_capi.lib</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

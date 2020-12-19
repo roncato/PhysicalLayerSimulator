@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5781EED-E5AE-498F-B66F-C7EC3D76521C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PhysicalLayer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RT_MALLOC=;MODEL=PhysicalLayerModel;NUMST=1;NCSTATES=0;HAVESTDIO=;RT=;USE_RTMODEL=;MAT_FILE=1;INTEGER_CODE=0;MT=0;CLASSIC_INTERFACE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;TID01EQ=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MATLAB)\rtw\c\src\rapid;$(MATLAB)\rtw\c\src;$(MATLAB)\rtw\c\src\ext_mode\common;$(MATLAB)\rtw\c\rsim;$(MATLAB)\extern\include;$(MATLAB)\simulink\include;..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw;$(MATLAB)\toolbox\dsp\include;$(MATLAB)\toolbox\dsp\extern\src\export\include\src;$(MATLAB)\toolbox\dsp\extern\src\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include\comm_rt;$(MATLAB)\toolbox\shared\dsp\vision\matlab\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(MATLAB)\extern\lib\win64\microsoft</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RT_MALLOC=;MODEL=PhysicalLayerModel;NUMST=1;NCSTATES=0;HAVESTDIO=;RT=;USE_RTMODEL=;MAT_FILE=1;INTEGER_CODE=0;MT=0;CLASSIC_INTERFACE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;TID01EQ=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MATLAB)\rtw\c\src\rapid;$(MATLAB)\rtw\c\src;$(MATLAB)\rtw\c\src\ext_mode\common;$(MATLAB)\rtw\c\rsim;$(MATLAB)\extern\include;$(MATLAB)\simulink\include;..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw;$(MATLAB)\toolbox\dsp\include;$(MATLAB)\toolbox\dsp\extern\src\export\include\src;$(MATLAB)\toolbox\dsp\extern\src\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include\comm_rt;$(MATLAB)\toolbox\shared\dsp\vision\matlab\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <Version>1.152</Version>
+      <AdditionalLibraryDirectories>$(MATLAB)\extern\lib\win64\microsoft</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RT_MALLOC=;MODEL=PhysicalLayerModel;NUMST=1;NCSTATES=0;HAVESTDIO=;RT=;USE_RTMODEL=;MAT_FILE=1;INTEGER_CODE=0;MT=0;CLASSIC_INTERFACE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;TID01EQ=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MATLAB)\rtw\c\src\rapid;$(MATLAB)\rtw\c\src;$(MATLAB)\rtw\c\src\ext_mode\common;$(MATLAB)\rtw\c\rsim;$(MATLAB)\extern\include;$(MATLAB)\simulink\include;..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw;$(MATLAB)\toolbox\dsp\include;$(MATLAB)\toolbox\dsp\extern\src\export\include\src;$(MATLAB)\toolbox\dsp\extern\src\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include\comm_rt;$(MATLAB)\toolbox\shared\dsp\vision\matlab\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;RT_MALLOC=;MODEL=PhysicalLayerModel;NUMST=1;NCSTATES=0;HAVESTDIO=;RT=;USE_RTMODEL=;MAT_FILE=1;INTEGER_CODE=0;MT=0;CLASSIC_INTERFACE=0;ONESTEPFCN=1;TERMFCN=1;MULTI_INSTANCE_CODE=1;TID01EQ=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MATLAB)\rtw\c\src\rapid;$(MATLAB)\rtw\c\src;$(MATLAB)\rtw\c\src\ext_mode\common;$(MATLAB)\rtw\c\rsim;$(MATLAB)\extern\include;$(MATLAB)\simulink\include;..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw;$(MATLAB)\toolbox\dsp\include;$(MATLAB)\toolbox\dsp\extern\src\export\include\src;$(MATLAB)\toolbox\dsp\extern\src\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include;$(MATLAB)\toolbox\comm\extern\comm_rt\export\include\comm_rt;$(MATLAB)\toolbox\shared\dsp\vision\matlab\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\common\rt_malloc_main.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rtw_modelmap_utils.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rt_logging.c" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\Program Files\MATLAB\R2013b\rtw\c\src\rt_logging_mmi.c" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_data.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_capi.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_Receiver.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_Transmitter.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtGetInf.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtGetNaN.cpp" />
+    <ClCompile Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rt_nonfinite.cpp" />
+    <ClCompile Include="BlockingBuffer.cpp" />
+    <ClCompile Include="CircularBuffer.cpp" />
+    <ClCompile Include="Channel.cpp" />
+    <ClCompile Include="Crc.cpp" />
+    <ClCompile Include="PhysicalLayerModel_Channel.cpp" />
+    <ClCompile Include="PhysicalLayerModel_Statistics.cpp" />
+    <ClCompile Include="PhysicalLayer.cpp" />
+    <ClCompile Include="Radio.cpp" />
+    <ClCompile Include="Receiver.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="Transmitter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\builtin_typeid_types.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\multiword_types.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_private.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_Receiver.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_Transmitter.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\PhysicalLayerModel_types.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtGetInf.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtGetNaN.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtmodel.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rtwtypes.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rt_defines.h" />
+    <ClInclude Include="..\PhysicalLayerCode\PhysicalLayerModel_grt_rtw\rt_nonfinite.h" />
+    <ClInclude Include="BlockingBuffer.h" />
+    <ClInclude Include="CircularBuffer.h" />
+    <ClInclude Include="Channel.h" />
+    <ClInclude Include="Crc.h" />
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="ModulationType.h" />
+    <ClInclude Include="PhysicalLayerModel_Channel.h" />
+    <ClInclude Include="PhysicalLayerModel_Statistics.h" />
+    <ClInclude Include="PhysicalLayer.h" />
+    <ClInclude Include="PhysicalLayerModel_ext.h" />
+    <ClInclude Include="Radio.h" />
+    <ClInclude Include="Receiver.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="Transmitter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
